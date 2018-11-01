@@ -1,0 +1,39 @@
+# This script can be used to check if a student produces an array output with
+# entries that are correct to the desired absolute tolerance (latter is set
+# using abstol below).  The script checks the student's answer, stored in
+# result.npy, against the expected answer in true_result.npy
+#
+# The stdout from this script can be used by a Submitty diff to check for a
+# correct solution
+#
+# Note: The script **cannot** use the .py extension, since Submitty
+# identifies the student's file using this extension (there are workarounds).
+
+import numpy as np
+import sys
+
+abstol = 1e-14 # absolute tolerance used to check the entries in the array
+
+# load the student's array and the expected result
+try:
+    y = np.load("result.npy")
+    ytrue = np.load("true_result.npy")
+except FileNotFoundError:
+    print("Could not find student's output file, result.npy")
+    sys.exit()
+
+# output shape, but do not proceed if the shapes do not match
+print(y.shape)
+if y.shape != ytrue.shape:
+    sys.exit()
+
+# if we get here then the shapes match, so check each entry; the approach used
+# here allows us to compare against any shape/size of array.
+it = np.nditer(ytrue, flags=["multi_index"])
+while not it.finished:
+    if abs(y[it.multi_index] - ytrue[it.multi_index]) > abstol:
+        print("Element ",it.multi_index," is incorrect: error = ",
+              abs(y[it.multi_index] - ytrue[it.multi_index]))
+    else:
+        print("Element ",it.multi_index," is correct")
+    it.iternext()

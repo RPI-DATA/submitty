@@ -1,0 +1,60 @@
+{
+  "testcases" : [
+    {
+      // Student-visible testcase name.
+      "title" : "Matrix-vector product and I/O",
+
+      // Here, multiple commands are provided (to be executed in sequence). The
+      // first is to execute the student code, the second is to count various
+      // tokens.
+      "command" : [ "python3 *.py",
+                    "python3 check",
+                    "submitty_count token -l python Import *.py",
+                    "submitty_count token -l python For *.py",
+                    "submitty_count token -l python AddAssign *.py"],
+      "points" : 4,
+      "validation" : [
+        // First, ensure that the student received the correct answer.
+        {
+          "method" : "diff",
+          "actual_file" : "STDOUT_1.txt",
+          "description" : "Program Output",
+          "expected_file" : "check_output.txt"
+        },
+        {
+          // Check for use of import
+          "method" : "intComparison",
+          "actual_file" : "STDOUT_2.txt",
+          "description" : "Use of import",
+          "comparison" : "ge",
+          "term" : 1,
+          "failure_message" : "Re-read the problem instructions.",
+          "show_message" : "on_failure",
+          "show_actual" : "never"
+        },
+        {
+          // Check for two for loops
+          "method" : "intComparison",
+          "actual_file" : "STDOUT_3.txt",
+          "description" : "Use of for loop",
+          "comparison" : "ge",
+          "term" : 2,
+          "failure_message" : "Re-read the problem instructions.",
+          "show_message" : "on_failure",
+          "show_actual" : "never"
+        },
+        {
+          // Check for +=
+          "method" : "intComparison",
+          "actual_file" : "STDOUT_4.txt",
+          "description" : "Use of compound add-assign",
+          "comparison" : "ge",
+          "term" : 1,
+          "failure_message" : "Re-read the problem instructions.",
+          "show_message" : "on_failure",
+          "show_actual" : "never"
+        }
+      ]
+    }
+  ]
+}
