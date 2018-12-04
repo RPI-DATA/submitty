@@ -8,7 +8,7 @@
       // first is to execute the student code, the second is to count various
       // tokens.
       "command" : [ "python3 *.py",
-                    "python3 check",
+                    "python3 ../tmp_compile/check.py",
                     "submitty_count token -l python Import *.py",
                     "submitty_count token -l python For *.py",
                     "submitty_count token -l python AddAssign *.py"],
@@ -33,7 +33,7 @@
           "show_actual" : "never"
         },
         {
-          // Check for two for loops
+          # Check for two for loops
           "method" : "intComparison",
           "actual_file" : "STDOUT_3.txt",
           "description" : "Use of for loop",
@@ -44,7 +44,7 @@
           "show_actual" : "never"
         },
         {
-          // Check for +=
+          # Check for +=
           "method" : "intComparison",
           "actual_file" : "STDOUT_4.txt",
           "description" : "Use of compound add-assign",
