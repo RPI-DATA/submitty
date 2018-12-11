@@ -1,0 +1,38 @@
+--------------------------------------------------------------------
+Getting to know Anaconda, Git, and Jupyter
+
+	- Download the Anaconda platform
+	- Figure out how to download Carme for Linux (very different from Mac)
+	- Learn about the Carme environment, how to set it up, and its purpose
+	- Learn about GitHub access control
+
+
+	- Manipulate and experiment with the Submitty grading functionality and architecture
+	- Manipulate and experiment with OKPY (Gofer Grader) file interactoins with JupyterLab
+	  (JupyterHub)
+      
+-------------------------------------------------------------------
+
+Jupyter Notebook running issues
+	- Update pip to the latest version even if it is downloaded off the official website
+    - Update git to the latest version should there be any access errors
+        * e.g. Access forbidden errors
+	- "No module named client error" -> download gofer grader
+        * Gofer grader is needed to access .ok files when working with a .ipynb file or .py file.
+    - "Missing Pandoc Error" -> download the Pandoc package that can be found online 
+        * Carme and Jupyter utilize this package to convert between markup and code forms, such as converting a .ipynb file to a .py file
+	- "Missing PyHamcrest Error" -> Gofer grader requires pip as well as PyHamcrest (if you do not already have it)
+        * PyHamcrest is a framework for writing matcher objects, which are used to write flexible tests for specific files.
+
+-------------------------------------------------------------------
+
+Steps to the utilizing the gofer grader autograder 
+(sub-application of OKPY)
+
+(1) Use carme to convert notebook from a .ipynb to a .py file.
+(2) Run the .py file.
+(3) Look at the config file. Loop through and run each test using a try and catch.
+(4) output the results of tests into a CSV (TESTNUM , PTS, PTSREC, OUTPUT)
+(5) Simplify the sample to potentially include only 2 tests.
+
+
