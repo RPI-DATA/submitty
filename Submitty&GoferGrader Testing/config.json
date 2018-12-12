@@ -33,7 +33,7 @@
           "show_actual" : "never"
         },
         {
-          # Check for two for loops
+          // Check for two for loops
           "method" : "intComparison",
           "actual_file" : "STDOUT_3.txt",
           "description" : "Use of for loop",
@@ -44,7 +44,7 @@
           "show_actual" : "never"
         },
         {
-          # Check for +=
+          // Check for +=
           "method" : "intComparison",
           "actual_file" : "STDOUT_4.txt",
           "description" : "Use of compound add-assign",

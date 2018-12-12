@@ -1,13 +1,20 @@
 --------------------------------------------------------------------
+
 Getting to know Anaconda, Git, and Jupyter
 
 	- Download the Anaconda platform
 	- Figure out how to download Carme for Linux (very different from Mac)
 	- Learn about the Carme environment, how to set it up, and its purpose
 	- Learn about GitHub access control
-
+        * How to clone repositories
+        * How to add files from repo
+        * How to commit files from repo
+        * How to pull/fetch files from repo
+        * How to push to the remote repo
 
 	- Manipulate and experiment with the Submitty grading functionality and architecture
+        * 
+        
 	- Manipulate and experiment with OKPY (Gofer Grader) file interactoins with JupyterLab
 	  (JupyterHub)
       
