@@ -1,0 +1,44 @@
+Trying:
+    L1 = [ 1, 4, 5, 10 ]
+Expecting nothing
+ok
+Trying:
+    findmax(L1)
+Expecting:
+    10
+ok
+Trying:
+    L2 = [ 1, 3, 9, 33, 81 ]  
+Expecting nothing
+ok
+Trying:
+    findmax(L2)
+Expecting:
+    81
+ok
+Trying:
+    L3 = [ 1, 4, 5, 10 ]
+Expecting nothing
+ok
+Trying:
+    findmin(L3)
+Expecting:
+    1
+ok
+Trying:
+    L4 = [ 9, 10, 22, 44, 55 ]  
+Expecting nothing
+ok
+Trying:
+    findmin(L4)
+Expecting:
+    9
+ok
+1 items had no tests:
+    testcode
+2 items passed all tests:
+   4 tests in testcode.findmax
+   4 tests in testcode.findmin
+8 tests in 3 items.
+8 passed and 0 failed.
+Test passed.

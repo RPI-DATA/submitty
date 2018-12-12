@@ -9,7 +9,7 @@ The following is the sample prototype for the correct autograding directory. The
 carme convert
 ```
 
-If the folder is not formatted this way, you may not be able to convert the .ipynb files and may have to resort to the Jupyter conversion procedure:
+If the folder is not formatted this way, you may not be able to convert the .ipynb files and may have to resort to the Jupyter conversion procedure (Assuming you are in the Anaconda Prompt):
 
 ```
 jupyter nbconvert --to script your_notebook_name.ipynb
@@ -56,5 +56,29 @@ autograder
     │       └── lab01.rst
     └── README.md
 
+Step 2: Running Python files on the command line and recording the output
+When you are running Python files on the command line in Linux (e.g. Windows Subsystem Linux (wsl)), the command usually is in the following formats:
 
+```
+python3 python_file.py      #Using Python 3
+```
 
+OR
+
+```
+python python_file.py       #Using Python 2 (or prior)
+```
+
+Now, we want to record the output of these tests in a separate external file, should they be print statements or doctests. We can do the following command:
+
+```
+python3 python_file.py > output.txt       #Using Python 3
+```
+
+OR
+
+```
+python python_file.py > output.txt        #Using Python 2 (or prior)
+```
+
+Now we would have a output.txt file that has the output from running the Python file.
