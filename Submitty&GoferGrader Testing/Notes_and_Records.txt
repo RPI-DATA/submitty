@@ -13,10 +13,11 @@ Getting to know Anaconda, Git, and Jupyter
         * How to push to the remote repo
 
 	- Manipulate and experiment with the Submitty grading functionality and architecture
-        * 
+        * Submitty autogrades with output comparisons between output of student code and output of professor code
         
-	- Manipulate and experiment with OKPY (Gofer Grader) file interactoins with JupyterLab
+	- Manipulate and experiment with OKPY (Gofer Grader) file interactions with JupyterLab
 	  (JupyterHub)
+        * Gofer Grader autogrades with a configuration JSON file that looks at the printing of the code with the answer depicted in the configuration file (Similar to a Python doctest procedure)
       
 -------------------------------------------------------------------
 
