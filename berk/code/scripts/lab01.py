@@ -139,7 +139,7 @@ print("This line is missing something."
 # In[ ]:
 
 
-print(3.2500)
+3.2500
 
 # Notice that we didn't have to `print`. When you run a notebook cell, if the last line has a value, then Jupyter helpfully prints out that value for you. However, it won't print out prior lines automatically.
 
@@ -147,8 +147,8 @@ print(3.2500)
 
 
 print(2)
-print(3)
-print(4)
+3
+4
 
 # Above, you should see that 4 is the value of the last expression, 2 is printed, but 3 is lost forever because it was neither printed nor last.
 # 
@@ -160,7 +160,7 @@ print(4)
 # In[ ]:
 
 
-print(3.25 - 1.5)
+3.25 - 1.5
 
 # Many basic arithmetic operations are built in to Python.  The textbook section on [Expressions](http://www.inferentialthinking.com/chapters/03/1/expressions.html) describes all the arithmetic operators used in the course.  The common operator that differs from typical math notation is `**`, which raises one number to the power of the other. So, `2**3` stands for $2^3$ and evaluates to 8. 
 # 
@@ -169,12 +169,12 @@ print(3.25 - 1.5)
 # In[ ]:
 
 
-print(1+6*5-6*3**2*2**3/4*7)
+1+6*5-6*3**2*2**3/4*7
 
 # In[ ]:
 
 
-print(2+(6*5-(6*3))**2*((2**3)/4*7))
+2+(6*5-(6*3))**2*((2**3)/4*7)
 
 # In standard math notation, the first expression is
 # 
@@ -193,7 +193,7 @@ print(2+(6*5-(6*3))**2*((2**3)/4*7))
 # In[ ]:
 
 
-print(...)
+...
 
 # # 3. Names
 # In natural language, we have terminology that lets us quickly reference very complicated concepts.  We don't say, "That's a large mammal with brown fur and sharp teeth!"  Instead, we just say, "Bear!"
@@ -206,7 +206,6 @@ print(...)
 
 
 ten = 3 * 2 + 4
-print(ten)
 
 # When you run that cell, Python first evaluates the first line.  It computes the value of the expression `3 * 2 + 4`, which is the number 10.  Then it gives that value the name `ten`.  At that point, the code in the cell is done running.
 # 
@@ -215,7 +214,7 @@ print(ten)
 # In[ ]:
 
 
-print(ten)
+ten
 
 # The statement `ten = 3 * 2 + 4` is not asserting that `ten` is already equal to `3 * 2 + 4`, as we might expect by analogy with math notation.  Rather, that line of code changes what `ten` means; it now refers to the value 10, whereas before it meant nothing at all.
 # 
@@ -238,7 +237,7 @@ print(ten)
 
 
 close_to_pi = 355/113
-print(close_to_pi)
+close_to_pi
 
 # Another common pattern is that a series of lines in a single cell will build up a complex computation in stages, naming the intermediate results.
 
@@ -249,7 +248,7 @@ bimonthly_salary = 840
 monthly_salary = 2 * bimonthly_salary
 number_of_months_in_a_year = 12
 yearly_salary = number_of_months_in_a_year * monthly_salary
-print(yearly_salary)
+yearly_salary
 
 # Names in Python can have letters (upper- and lower-case letters are both okay and count as different letters), underscores, and numbers.  The first character can't be a number (otherwise a name might look like a number).  And names can't contain spaces, since spaces are used to separate pieces of code from each other.
 # 
@@ -262,7 +261,7 @@ a = 840
 b = 2 * a
 c = 12
 d = c * b
-print(d)
+d
 
 # **However**, names are very important for making your code *readable* to yourself and others.  The cell above is shorter, but it's totally useless without an explanation of what it does.
 # 
@@ -278,12 +277,12 @@ print(d)
 # Change the next line so that it computes the number of
 # seconds in a decade and assigns that number the name
 # seconds_in_a_decade.
-seconds_in_decade = 100000
+seconds_in_a_decade = ...
 
 # We've put this line in this cell so that it will print
 # the value you've given to seconds_in_a_decade when you
 # run it.  You don't need to change this.
-print(seconds_in_a_decade)
+seconds_in_a_decade
 
 # ## 3.1. Checking your code
 # Now that you know how to name things, you can start using the built-in *tests* to check whether your work is correct. Try not to change the contents of the test cells. Running the following cell will test whether you have assigned `seconds_in_a_decade` correctly in Question 3.2. If you haven't, this test will tell you the correct answer. Resist the urge to just copy it, and instead try to adjust your expression. (Sometimes the tests will give hints about what went wrong...)

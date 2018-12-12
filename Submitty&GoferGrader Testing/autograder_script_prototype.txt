@@ -1,0 +1,60 @@
+Gofer Grader Script
+
+** Before following the procedure, please activate the Carme environment using the 'activate' file found in the 'bin' directory when you installed the environment**
+
+Step 1: Formatting a correct directory
+The following is the sample prototype for the correct autograding directory. The important directories here are a "notebooks" directory that contains the python files being tested, the "tests" files that contain the doctest python files, and the "scripts" directory, where the .ipynb files will be converted to .py files upon calling the following command in the terminal(you must be in the directory where the .ipynb files are located):
+
+```
+carme convert
+```
+
+If the folder is not formatted this way, you may not be able to convert the .ipynb files and may have to resort to the Jupyter conversion procedure:
+
+```
+jupyter nbconvert --to script your_notebook_name.ipynb
+```
+
+OR
+
+```
+jupyter nbconvert --to python your_notebook_name.ipynb
+```
+
+autograder
+└── berk
+    ├── code
+    │   ├── notebooks
+    │   │   ├── error.jpg
+    │   │   ├── lab01_copy.ipynb
+    │   │   ├── lab01.ipynb
+    │   │   ├── lab01.ok
+    │   │   ├── license.md
+    │   │   ├── map.jpg
+    │   │   ├── numberline_0.png
+    │   │   ├── numberline_1.png
+    │   │   ├── readme.md
+    │   │   └── tests
+    │   │       ├── __init__.py
+    │   │       ├── q32.py
+    │   │       ├── q331.py
+    │   │       ├── q332.py
+    │   │       ├── q411.py
+    │   │       ├── q421.py
+    │   │       ├── q511.py
+    │   │       └── q51.py
+    │   └── scripts
+    │       ├── lab01_copy.py
+    │       └── lab01.py
+    ├── data
+    │   └── readme.md
+    ├── docs
+    │   ├── lab01_copy.md
+    │   ├── lab01.md
+    │   └── rst
+    │       ├── lab01_copy.rst
+    │       └── lab01.rst
+    └── README.md
+
+
+
