@@ -8,7 +8,7 @@ This example comes from the [binder-examples](https://github.com/binder-examples
 
 [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/RPI-DATA/submitty/master)
 
-The gopher Grader directory has 3 notebooks.  There are three questions in each notebook.  
+The `gopher` directory has 3 notebooks which can be tested.  There are three questions in each notebook.  
 
 The score should be:
 - 0/3 for the file `lab_0_3.ipynb'
