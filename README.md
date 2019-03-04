@@ -15,3 +15,8 @@ The score should be:
 - 1/3 for the file `lab_1_3.ipynb'
 - 2/3 for the file `lab_2_3.ipynb'
 - 3/3 for the file `lab_3_3.ipynb'
+
+[Use Github Desktop to clone assignment](https://classroom.github.com/a/6Pv7w5UE)
+
+
+  
